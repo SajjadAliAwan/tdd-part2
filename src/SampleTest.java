@@ -3,11 +3,16 @@ import static org.junit.Assert.*;
 
 public class SampleTest 
 {
-	/*3rd Chapter learning*/
+	/*4th Chapter learning*/
 	
 	@Test
-	public void testEquality() 
-	{
+	public void testMultiplication() {
+		Dollar five= new Dollar(5);
+		assertEquals(new Dollar(10), five.times(2));
+		assertEquals(new Dollar(15), five.times(3));
+		}
+	@Test
+	public void testEquality() {
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
 		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
