@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 
 public class SampleTest 
 {
-	/*4th Chapter learning*/
+	/*5th Chapter learning*/
 	
 	@Test
 	public void testMultiplication() {
@@ -16,5 +16,14 @@ public class SampleTest
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
 		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
+	
+	@Test
+	public void testFrancMultiplication() 
+	{
+		Franc five= new Franc(5);
+		assertEquals(new Franc(10), five.times(2));
+		assertEquals(new Franc(15), five.times(3));
+	}
+	
 	
 }
