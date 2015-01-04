@@ -1,11 +1,10 @@
 
-class Money {
-	
-	protected int amount;
+public class Money {
 
-	public boolean equals(Object object) 
-	{
-		Money money= (Money) object;
-		return amount == money.amount;
+	protected int amount;
+	
+	public boolean equals(Object object){
+		Money money = (Money)object;
+		return this.amount == money.amount;
 	}
 }
