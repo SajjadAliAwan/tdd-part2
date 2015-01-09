@@ -1,9 +1,5 @@
 
-public class Test {
-	
-	Test(){
-		
-		System.out.print("This is first testing committ for tdd");
-	}
-
+public interface Test {
+	public abstract int countTestCases();
+	public abstract void run(TestResult result) throws Exception;
 }
